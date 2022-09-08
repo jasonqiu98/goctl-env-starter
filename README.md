@@ -40,7 +40,7 @@ goctl env check -i -f -v
    ```
    export PATH=$PATH:~/go/bin
    ```
-  Here `~/go` is my `$GOPATH` and you should use your own one. Run the following command to make the environment path take effect immediately.
+   Here `~/go` is my `$GOPATH` and you should use your own one. Run the following command to make the environment path take effect immediately.
    ```shell
    source ~/.bashrc
    ```
