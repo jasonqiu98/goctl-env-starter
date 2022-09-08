@@ -10,6 +10,8 @@ Before everything, clone this project.
 git clone https://github.com/jasonqiu98/goctl-env-starter.git
 ```
 
+Also, make sure your Docker daemon is running.
+
 1. Install (and run) the container `goctl-env`. Note that the path `/go/src` in the Docker container is linked to the path `src/` in the project folder.
 ```shell
 cd goctl-env
