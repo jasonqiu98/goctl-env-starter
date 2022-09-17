@@ -1,6 +1,6 @@
 # goctl-env
 
-A way to quickly install the go-zero environment using Docker
+A way to quickly install the [go-zero](https://go-zero.dev/) environment using Docker
 
 ## Install `goctl`, `protoc` and `protoc-gen-go` using Docker
 
@@ -8,6 +8,7 @@ Before everything, clone this project.
 
 ```
 git clone https://github.com/jasonqiu98/goctl-env-starter.git
+cd goctl-env-starter
 ```
 
 Also, make sure your Docker daemon is running.
@@ -17,9 +18,9 @@ Also, make sure your Docker daemon is running.
 cd goctl-env
 /bin/bash create.sh
 ```
-Now, the path `src/` in your project folder is already linked to the path `/go/src` in the Docker container. 
+The Shell script `create.sh` will build and run a Docker container, and at the same time link the path `src/` in your project folder to the path `/go/src` in the Docker container. If no `/src` is created before, this folder will be automatically created.
 
-2. Re-run the container
+2. (Exit and) Re-run the container
 ```shell
 /bin/bash run.sh
 ```
