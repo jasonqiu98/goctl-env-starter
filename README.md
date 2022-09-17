@@ -30,6 +30,8 @@ The Shell script `create.sh` will build and run a Docker container, and at the s
 goctl env check -i -f -v
 ```
 
+4. Note that in the current setting, only the port 8081 is exposed to outside the Docker container. You can make changes on the ports you want to expose in the `Dockerfile` (and also the `create.sh`).
+
 ## [Optional] Install `goctl`, `protoc` and `protoc-gen-go` locally
 
 1. Run the following command in your terminal.
